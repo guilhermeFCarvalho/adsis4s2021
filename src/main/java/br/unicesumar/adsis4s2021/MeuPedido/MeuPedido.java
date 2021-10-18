@@ -18,7 +18,7 @@ public class MeuPedido {
     private String numero;
 
     @OneToMany(cascade = CascadeType.ALL)
-    @JoinColumn(name="pedido_id")
+    @JoinColumn(name="meu_pedido_id")
     private List<MeuItemPedido> itens;
      
     public MeuPedido() {
